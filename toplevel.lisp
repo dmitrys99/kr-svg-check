@@ -17,10 +17,10 @@
       (if (xml-nested-p (ensure-xml текст)
 			(ensure-xml кусок))
 	  (progn
-	    (print "OK")
+	    (format t "OK~%")
 	    (adopt:exit 0))
 	  (progn
-	    (print "FAIL")
+	    (format t "FAIL~%")
 	    (adopt:exit 1))))))
 
 (defun loader ()
